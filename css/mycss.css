@@ -1,0 +1,243 @@
+
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    line-height: 30px;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, beige, dimgray, beige);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* class and id
+
+/* my navigation bar*/
+.nav ul{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav li {
+    float:left;
+}
+
+.nav li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* change color when mouse hover over*/
+.nav a:hover {
+    background-color: coral;
+}
+
+
+
+
+
+
+
+
+/* my home section*/
+.home {
+    background: url(../images/background.JPG); 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.prof-box {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+
+.social-icons {
+	font-size: 40px;
+}
+
+.social-icons a {
+	color: white;
+}
+
+
+
+
+
+/* add padding-top to offset navigation bar.
+going to replace it with JaveScript in the future.
+*/
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+.row h1 {
+    text-align: center;
+    padding-top: 1%;
+}
+
+.row p {
+    text-align: center;
+}
+
+
+
+
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+
+.column3 {
+    margin-left: 6%; 
+}
+
+
+
+
+/* about section*/
+#about {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#about p {
+    text-align: left;
+}
+
+#about p a {
+    text-decoration: none;
+}
+
+
+
+
+
+/* education section */
+#education {
+    margin-left: 2%;
+    margin-right: 2%
+}
+
+
+.purdue {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.beihang {
+    margin-top: -10px; 
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.university {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    width: 100%;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* use CSS3 media queries to create a responsive top navigation for other device*/
+@media (max-width: 600px){
+    .nav ul {
+        position:static; 
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width:800px) {
+    
+    .column {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .purdue {
+        margin-bottom: -5%;
+    }
+    
+    .beihang {
+        padding-top:7%;
+    }
+}
+
