@@ -1,4 +1,12 @@
+/* ---------------------------------------------------
+                   Global Style
+--------------------------------------------------- */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     margin: 0px;
@@ -10,6 +18,12 @@ h1 {
     font-size: 36px;
     font-family: sans-serif;
     font-weight: 100;
+    text-align: center;
+    margin: 20px auto;
+}
+
+p {
+    text-align: center;
 }
 
 hr {
@@ -20,43 +34,48 @@ hr {
 
 
 
+/* add padding-top to offset navigation bar.
+going to replace it with JaveScript in the future.
+*/
+.row {
+    margin: 30px auto;
+}
+
+
+/* Create three equal columns that floats next to each other */
+.column {
+    display: inline-block;
+    width: 33.33%;
+    text-align: center;
+}
 
 
 
+/* ---------------------------------------------------
+                   Navigation Bar
+--------------------------------------------------- */
 
-
-
-
-
-
-
-/* class and id
-
-/* my navigation bar*/
-.nav ul{
-	list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+.nav {
     background-color: #333;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 999;
+}
+
+.nav ul{
+    text-align: center;
 }
 
 .nav li {
-    float:left;
+    display: inline-block;
+    margin: 0 10px;
 }
 
-.nav li a{
-    display: block;
+.nav a {
     color: white;
-    text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
 }
 
-/* change color when mouse hover over*/
 .nav a:hover {
     background-color: coral;
 }
@@ -66,6 +85,10 @@ hr {
 
 
 
+/* ---------------------------------------------------
+                   Home Section
+--------------------------------------------------- */
+
 
 
 /* my home section*/
@@ -74,21 +97,20 @@ hr {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 80vh;
 }
 
 .prof-box {
 	background-color: rgba(0, 0, 0, 0.5);
 	color: white;
     width: 400px;
-    height: 200px;
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    height: 260px;
+    position: relative;
+    top: 40%;
     margin: auto;
     text-align: center;
+    line-height:60px;
+    padding-top: 10px;
 }
 
 .social-icons {
@@ -102,47 +124,10 @@ hr {
 
 
 
+/* ---------------------------------------------------
+                   About Section
+--------------------------------------------------- */
 
-/* add padding-top to offset navigation bar.
-going to replace it with JaveScript in the future.
-*/
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-
-}
-
-.row h1 {
-    text-align: center;
-    padding-top: 1%;
-}
-
-.row p {
-    text-align: center;
-}
-
-
-
-
-
-/* Create three equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 33.;
-    margin-left: 4%;
-    margin-right: 4%;
-}
-
-
-.column3 {
-    margin-left: 6%; 
-}
-
-
-
-
-/* about section*/
 #about {
     margin-left: 5%;
     margin-right: 5%;
@@ -160,37 +145,10 @@ going to replace it with JaveScript in the future.
 
 
 
-/* education section */
-#education {
-    margin-left: 2%;
-    margin-right: 2%
-}
 
-
-.purdue {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    text-align: center;
-}
-
-.beihang {
-    margin-top: -10px; 
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.university {
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: -10px;
-}
-
-
-
-
-
-
-
+/* ---------------------------------------------------
+                   Footer Section
+--------------------------------------------------- */
 
 
 
@@ -214,30 +172,4 @@ going to replace it with JaveScript in the future.
 
 
 
-
-
-
-/* use CSS3 media queries to create a responsive top navigation for other device*/
-@media (max-width: 600px){
-    .nav ul {
-        position:static; 
-    }
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width:800px) {
-    
-    .column {
-        width: 100%;
-        margin-left: 0;
-    }
-    
-    .purdue {
-        margin-bottom: -5%;
-    }
-    
-    .beihang {
-        padding-top:7%;
-    }
-}
 
