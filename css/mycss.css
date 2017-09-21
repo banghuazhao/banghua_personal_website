@@ -9,7 +9,6 @@
 }
 
 body {
-    margin: 0px;
     font-family: sans-serif;
     line-height: 30px;
 }
@@ -58,7 +57,9 @@ going to replace it with JaveScript in the future.
 .nav {
     background-color: #333;
     position: fixed;
-    width: 100%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%);
     z-index: 999;
 }
 
@@ -68,12 +69,12 @@ going to replace it with JaveScript in the future.
 
 .nav li {
     display: inline-block;
-    margin: 0 10px;
 }
 
 .nav a {
     color: white;
     text-decoration: none;
+    padding: 8px;
 }
 
 .nav a:hover {
