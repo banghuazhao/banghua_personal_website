@@ -57,10 +57,8 @@ going to replace it with JaveScript in the future.
 .nav {
     background-color: #333;
     position: fixed;
-    left: 50%;
-    /* bring your own prefixes */
-    transform: translate(-50%);
     z-index: 999;
+    width: 100%;
 }
 
 .nav ul{
@@ -74,13 +72,17 @@ going to replace it with JaveScript in the future.
 .nav a {
     color: white;
     text-decoration: none;
-    padding: 8px;
+    padding: 6px 12px;
+    position: relative;
 }
 
 .nav a:hover {
     background-color: coral;
 }
 
+.nav a:active {
+    top: 2px;
+}
 
 
 
