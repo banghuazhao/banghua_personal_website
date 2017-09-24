@@ -385,6 +385,14 @@ footer p {
         opacity: 1;
     }
     
+    
+    
+    /* About */
+    #about {
+        font-size: 90%;
+    }
+    
+    
     /* Education section */
     #education .education1 {
         width: 100%;
@@ -416,9 +424,9 @@ footer p {
     
 
     .education2 .education3 .edu-block {
-        font-size: 90%;
         margin: auto;
         width: 200px;
+        font-size: 90%;
     }
 }
 
