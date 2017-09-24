@@ -5,85 +5,76 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
+
 
 body {
-    font-family: sans-serif;
-    line-height: 30px;
-}
-
-h1 {
-    font-size: 36px;
-    font-family: sans-serif;
-    font-weight: 100;
-    text-align: center;
-    margin: 20px auto;
-}
-
-p {
-    text-align: center;
-}
-
-hr {
-    border: none;
-    height: 1px;
-    background-image: -webkit-linear-gradient(left, beige, dimgray, beige);
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
 }
 
 
-
-/* add padding-top to offset navigation bar.
-going to replace it with JaveScript in the future.
-*/
-.row {
-    margin: 30px auto;
+.main-wrapper {
+    width: 100%;
 }
 
 
-/* Create three equal columns that floats next to each other */
-.column {
-    display: inline-block;
-    width: 33.33%;
-    text-align: center;
+li {
+    list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
 
 
 /* ---------------------------------------------------
                    Navigation Bar
 --------------------------------------------------- */
 
-.nav {
-    background-color: #333;
+nav {
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
     position: fixed;
+    background: black;
+    border-radius: 20px;
     z-index: 999;
-    width: 100%;
 }
 
-.nav ul{
-    text-align: center;
+nav ul {
+    margin: auto;
+    padding: 8px 0;
 }
 
-.nav li {
-    display: inline-block;
+nav ul li {
+    display: inline;
 }
 
-.nav a {
+nav ul li a {
+    font-size: 100%;
+    margin-left: 4px;
+    padding: 2px 16px;
     color: white;
-    text-decoration: none;
-    padding: 6px 12px;
-    position: relative;
+    border-radius: 5px;
+    transition: background .2s, color .2s;
 }
 
-.nav a:hover {
-    background-color: coral;
+nav ul li a:hover {
+    background: white;
+    color: black;
 }
 
-.nav a:active {
-    top: 2px;
+nav ul li a#active {
+    background: grey;
 }
 
+nav ul li a#active:hover {
+    background: white;
+    color: black;
+}
 
 
 
@@ -92,75 +83,167 @@ going to replace it with JaveScript in the future.
                    Home Section
 --------------------------------------------------- */
 
-
-
-/* my home section*/
-.home {
-    background: url(../images/background.JPG); 
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 80vh;
-}
-
-.prof-box {
-	background-color: rgba(0, 0, 0, 0.5);
-	color: white;
-    width: 400px;
-    height: 260px;
-    position: relative;
-    top: 40%;
+div.picture {
+    width: 80%;
     margin: auto;
-    text-align: center;
-    line-height:60px;
-    padding-top: 10px;
+    position: relative;
+    top: 40px;
+    overflow: hidden;
+    border-radius: 20px;
+    z-index: -1;
 }
 
-.social-icons {
-	font-size: 40px;
+div.picture section {
+    position: relative;
+    left: 0;
+    width:100%;
+    margin: 0;
 }
 
-.social-icons a {
-	color: white;
+div.picture section div img {
+    width: 100%;
 }
-
 
 
 
 /* ---------------------------------------------------
                    About Section
 --------------------------------------------------- */
-
 #about {
-    margin-left: 5%;
-    margin-right: 5%;
+    width: 80%;
+    margin: 60px auto 20px auto;
+}
+
+#about h1 {
+    text-align: center;
+    padding: 5px;
 }
 
 #about p {
-    text-align: left;
+    text-align:justify;
+    line-height: 1.6;
 }
 
-#about p a {
-    text-decoration: none;
+/* ---------------------------------------------------
+                   Education Section
+--------------------------------------------------- */
+#education {
+    width: 80%;
+    margin: 60px auto 20px auto;
+}
+
+#education h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.education-div1 {
+    display: flex;
 }
 
 
+.education-div1 .education-div2 {
+    width: 30.3333%;
+    margin:auto;
+    min-height: 300px;
+}
+
+.education-div1 .education-div2 .logo {
+    width: 200px;
+    height: 200px;
+    margin: auto
+}
+
+#logo1{
+    background: url(../img/Purdue.png) no-repeat center;
+    background-size: contain;
+}
+
+#logo2{
+    background: url(../img/Purdue.png) no-repeat center;
+    background-size: contain;
+}
+#logo3{
+    background: url(../img/Beihang.gif) no-repeat center;
+    background-size: contain;
+}
+
+.education-div1 .education-div2 .edu-block {
+    padding: 5px;
+    text-align: center;
+}
+
+.education-div1 .education-div2 .edu-block h2{
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.education-div1 .education-div2 .edu-block p {
+    padding: 5px;
+}
+
+/* ---------------------------------------------------
+                   Experience Section
+--------------------------------------------------- */
+#experience {
+    width: 80%;
+    margin: 60px auto 20px auto;
+    text-align: center;
+}
+
+/* ---------------------------------------------------
+                   Project Section
+--------------------------------------------------- */
+#project {
+    width: 80%;
+    margin: 60px auto 20px auto;
+    text-align: center;
+}
 
 
+/* ---------------------------------------------------
+                   Skill Section
+--------------------------------------------------- */
+#skill {
+    width: 80%;
+    margin: 60px auto 20px auto;
+    text-align: center;
+}
 
+
+/* ---------------------------------------------------
+                   Hobby Section
+--------------------------------------------------- */
+#hobby {
+    width: 80%;
+    margin: 60px auto 20px auto;
+    text-align: center;
+}
+
+/* ---------------------------------------------------
+                   contact Section
+--------------------------------------------------- */
+#contact {
+    width: 80%;
+    margin: 60px auto 20px auto;
+    text-align: center;
+}
 
 /* ---------------------------------------------------
                    Footer Section
 --------------------------------------------------- */
-
-
-
-.footer {
-    background-color: #333;
-    color: white;
+footer {
+    padding: 20px 0;
     width: 100%;
-    position: absolute;
+    background: black;
+    color: white;
 }
+
+footer p {
+    text-align: center;
+    margin: auto;
+}
+
 
 
 
