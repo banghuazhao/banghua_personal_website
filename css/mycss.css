@@ -217,7 +217,7 @@ footer p {
 
 
 
-/* Screen size for pad */
+/* Screen size for pad-pro */
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
     
 /* About Section */
@@ -245,7 +245,7 @@ footer p {
 
 
 /* Screen size for pad */
-@media only screen and (max-width: 768px) and (min-width: 420px)  {
+@media only screen and (max-width: 768px) and (min-width: 450px)  {
     
 /* Navigaztion */
 nav {
@@ -284,12 +284,12 @@ input#menu:checked ~ nav {
 /* About Section */
     
 #about div {
-    max-width: 35em;
+    max-width: 28em;
 }
     
 /* Education section */
 .education1 {
-    width: 35em;
+    width: 28em;
 }
 
 
@@ -297,10 +297,9 @@ input#menu:checked ~ nav {
     flex-direction: column;
 }
 
-
 .education3 {
     display: flex;
-    width: 450px;
+    width: 420px;
     height: 120px;
     margin: 10px auto;
     border: 1px solid black;
@@ -309,7 +308,7 @@ input#menu:checked ~ nav {
 .logo {
     width: 100px;
     height: 100px;
-    margin: auto auto;
+    margin: 10px;
 }
 
 
@@ -317,89 +316,93 @@ input#menu:checked ~ nav {
     margin: auto auto;
     width: 300px;
 }
+    
+.edu-block h3 {
+    padding: 0;
+} 
+
 
 
 }
 
 /* Screen size for phone */
-@media only screen and (max-width: 420px) {
-    /* Navigaztion */
-    nav {
-        flex-direction: column;
-        width: 120px;
-        top: 35px;
-        left: 20px;
-        margin: 0;
-        border-radius: 0 0;
-        visibility: hidden;
-        opacity: 0;
-        transition: opacity .8s;
-    }
-    nav ul {
-        padding: 0;        
-    }
-    nav ul li a {
-        display: block;
-        text-align: center;
-        border-radius: 0 0;
-    }
-    label i.fa-bars {
-        display: block;
-        position: fixed;
-        top: 2px;
-        left: 20px;
-        font-size: 25px;
-        background: #fff;
-        z-index: 1000px;
-    }
-    input#menu:checked ~ nav {
-        visibility: visible;
-        opacity: 1;
-    }
-    
-    
-    
-    /* About */
-    #about {
-        font-size: 90%;
-    }
-    
-    
-    /* Education section */
-    #education .education1 {
-        width: 100%;
-        margin: auto;
-    }
-
-    #education h1 {
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-    .education2 {
-        display: flex;
-        flex-direction: column;
-    }
+@media only screen and (max-width: 450px) {
+/* Navigaztion */
+nav {
+    flex-direction: column;
+    width: 120px;
+    top: 35px;
+    left: 20px;
+    margin: 0;
+    border-radius: 0 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .8s;
+}
+nav ul {
+    padding: 0;        
+}
+nav ul li a {
+    display: block;
+    text-align: center;
+    border-radius: 0 0;
+}
+label i.fa-bars {
+    display: block;
+    position: fixed;
+    top: 2px;
+    left: 20px;
+    font-size: 25px;
+    background: #fff;
+    z-index: 1000px;
+}
+input#menu:checked ~ nav {
+    visibility: visible;
+    opacity: 1;
+}
 
 
-    .education2 .education3 {
-        display: flex;
-        width: 280px;
-        margin: 10px auto;
-        border: 1px solid black;
-    }
 
-    .education2 .education3 .logo {
-        width: 90px;
-        height: 90px;
-    }
+/* About */
+#about div {
+    max-width: 20em;
+}
+
+
+/* Education section */
+.education1 {
+    width: 20em;
+}
+
+
+.education2 {
+    flex-direction: column;
+}
+
+.education3 {
+    display: flex;
+    width: 300px;
+    height: 120px;
+    margin: 10px auto;
+    border: 1px solid black;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin: 20px 12px;
+}
+
+
+.edu-block {
+    margin: auto auto;
+    width: 300px;
+}
     
+.edu-block h3 {
+    padding: 0;
+} 
 
-    .education2 .education3 .edu-block {
-        margin: auto;
-        width: 200px;
-        font-size: 90%;
-    }
 }
 
 
