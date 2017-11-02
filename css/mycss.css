@@ -1,10 +1,5 @@
 /* Global Style */
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 
 body {
     font-family: "Helvetica", "Arial", sans-serif;
@@ -16,103 +11,44 @@ h1, h2 {
 }
 
 
-li {
-    list-style: none;
+
+/* Home */
+
+#home {
+    background: url('/img/background.jpg') no-repeat center center;
+    background-size: cover;
+    height: 600px; 
+    padding: 0;
+    margin: 0;
 }
 
-a {
-    text-decoration: none;
+#home h1 {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 600px;
+    color: white;
 }
-
 
 
 /* Navigation Bar */
-label i.fa-bars {
-    display: none;
-}
-
-nav {
-    width: 80%;
-    margin-left: 10%;
-    display: flex;
-    position: fixed;
-    background: black;
-    border-radius: 20px;
-    z-index: 999;
-}
-
-nav ul {
-    margin: auto;
-    padding: 8px 0;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    font-size: 100%;
-    margin-left: 4px;
-    padding: 2px 12px;
-    color: white;
-    border-radius: 5px;
-    transition: background .2s, color .2s;
-}
-
-nav ul li a:hover {
-    background: white;
-    color: black;
-}
-
-nav ul li a#active {
-    background: grey;
-}
-
-nav ul li a#active:hover {
-    background: white;
-    color: black;
-}
-
-
-
-
-/* Home Section */
-
-section.picture {
-    margin: auto;
-    position: relative;
-    overflow: hidden;
-    z-index: -1;
-}
-
-
-section.picture div img {
-    width: 100%;
-}
 
 
 
 /* About Section */
-
 #about {
-    width: 100%;
-}
-
-#about div {
-    max-width: 60em;
-    margin: auto;
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
 
 #about h1 {
-    text-align: center;
-    padding-top: 2em;
+    margin: 0.5em;
 }
 
 #about p {
-
-    line-height: 1.5;
-    padding: 1em 1em 2em 1em;
+    text-align: left;
 }
+
 
 
 
@@ -222,9 +158,6 @@ footer p {
     
 /* About Section */
     
-#about div {
-    max-width: 45em;
-}
     
     
 /* Education Section */
@@ -248,44 +181,11 @@ footer p {
 @media only screen and (max-width: 768px) and (min-width: 450px)  {
     
 /* Navigaztion */
-nav {
-    flex-direction: column;
-    width: 120px;
-    top: 35px;
-    left: 20px;
-    margin: 0;
-    border-radius: 0 0;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity .8s;
-}
-nav ul {
-    padding: 0;        
-}
-nav ul li a {
-    display: block;
-    text-align: center;
-    border-radius: 0 0;
-}
-label i.fa-bars {
-    display: block;
-    position: fixed;
-    top: 2px;
-    left: 20px;
-    font-size: 25px;
-    z-index: 1000px;
-}
-input#menu:checked ~ nav {
-    visibility: visible;
-    opacity: 1;
-}
+
 
     
 /* About Section */
     
-#about div {
-    max-width: 28em;
-}
     
 /* Education section */
 .education1 {
@@ -328,45 +228,12 @@ input#menu:checked ~ nav {
 /* Screen size for phone */
 @media only screen and (max-width: 450px) {
 /* Navigaztion */
-nav {
-    flex-direction: column;
-    width: 120px;
-    top: 35px;
-    left: 20px;
-    margin: 0;
-    border-radius: 0 0;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity .8s;
-}
-nav ul {
-    padding: 0;        
-}
-nav ul li a {
-    display: block;
-    text-align: center;
-    border-radius: 0 0;
-}
-label i.fa-bars {
-    display: block;
-    position: fixed;
-    top: 2px;
-    left: 20px;
-    font-size: 25px;
-    background: #fff;
-    z-index: 1000px;
-}
-input#menu:checked ~ nav {
-    visibility: visible;
-    opacity: 1;
-}
+
 
 
 
 /* About */
-#about div {
-    max-width: 20em;
-}
+
 
 
 /* Education section */
@@ -390,7 +257,7 @@ input#menu:checked ~ nav {
 .logo {
     width: 80px;
     height: 80px;
-    margin: 20px 12px;
+    margin: 20px 10px;
 }
 
 
@@ -404,6 +271,8 @@ input#menu:checked ~ nav {
 } 
 
 }
+
+
 
 
 
