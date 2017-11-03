@@ -6,9 +6,30 @@ body {
     color: #555;
 }
 
-h1, h2 {
-  color: #333;
+h1 {
+    text-align: center;
+    color: #333;
 }
+
+.companyName {
+    display: block;
+    padding-top: 0.4em;
+    font-size: 20px;
+    
+}
+
+.role {
+    display: block;
+    
+}
+
+.date {
+    color: darkgray;
+    font-size: 14px;
+}
+
+
+/* Navigation Bar */
 
 
 
@@ -22,27 +43,58 @@ h1, h2 {
     margin: 0;
 }
 
-#home h1 {
+.vertical-center {
+    display: flex;
+    align-items: center;
+}
+
+
+.prof-box {
+    height: 400px;
+    min-width: 300px;
+    background: rgba(0,0,0,0.4);
     text-align: center;
-    vertical-align: middle;
-    line-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.prof-pic {
+    margin-top: 40px;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+.prof-box h1 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.social-icon {
+    height: 100px;
+    font-size: 40px;
+}
+
+.social-icon i {
+    padding: 10p;
     color: white;
 }
 
 
-/* Navigation Bar */
+
 
 
 
 /* About Section */
 #about {
     text-align: center;
-    padding-top: 3em;
-    padding-bottom: 3em;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 #about h1 {
-    margin: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 #about p {
@@ -54,59 +106,17 @@ h1, h2 {
 
 /* Education Section */
 #education {
-    width: 100%;
-    background-color: rgb(242, 242, 245);
-}
-
-.education1 {
-    width: 60em;
-    margin: auto;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 #education h1 {
     text-align: center;
-    padding-top: 2em;
-}
-
-.education2 {
-    line-height: 1.5;
-    padding: 1em 1em 2em 1em;
-    display: flex;
-    justify-content:space-around;
-}
-
-
-.education3 {
-    width: 100%;
-}
-
-.logo {
-    width: 150px;
-    height: 150px;
     margin: auto;
+    padding-bottom: 0.5em;
 }
 
-#logo1{
-    background: url(../img/Purdue.png) no-repeat center;
-    background-size: contain;
-}
-
-#logo2{
-    background: url(../img/Purdue.png) no-repeat center;
-    background-size: contain;
-}
-#logo3{
-    background: url(../img/Beihang.gif) no-repeat center;
-    background-size: contain;
-}
-
-.edu-block {
-    text-align: center;
-}
-
-.edu-block h3 {
-    padding: 1em 0 0 0;
-}
 
 
 
@@ -188,42 +198,8 @@ footer p {
     
     
 /* Education section */
-.education1 {
-    width: 28em;
-}
 
 
-.education2 {
-    flex-direction: column;
-}
-
-.education3 {
-    display: flex;
-    width: 420px;
-    height: 120px;
-    margin: 10px auto;
-    border: 1px solid black;
-}
-
-.logo {
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-}
-
-
-.edu-block {
-    margin: auto auto;
-    width: 300px;
-}
-    
-.edu-block h3 {
-    padding: 0;
-} 
-
-
-
-}
 
 /* Screen size for phone */
 @media only screen and (max-width: 450px) {
@@ -237,42 +213,6 @@ footer p {
 
 
 /* Education section */
-.education1 {
-    width: 20em;
-}
-
-
-.education2 {
-    flex-direction: column;
-}
-
-.education3 {
-    display: flex;
-    width: 300px;
-    height: 120px;
-    margin: 10px auto;
-    border: 1px solid black;
-}
-
-.logo {
-    width: 80px;
-    height: 80px;
-    margin: 20px 10px;
-}
-
-
-.edu-block {
-    margin: auto auto;
-    width: 300px;
-}
-    
-.edu-block h3 {
-    padding: 0;
-} 
-
-}
-
-
 
 
 
