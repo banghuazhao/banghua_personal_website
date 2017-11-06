@@ -30,7 +30,18 @@ h1 {
 
 
 /* Navigation Bar */
+.nav-custom {
+    margin: auto;
+}
 
+.nav-custom li{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+}
+.nav-custom a{
+    color: w;
+}
 
 
 /* Home */
@@ -50,7 +61,6 @@ h1 {
 
 
 .prof-box {
-    height: 400px;
     min-width: 300px;
     background: rgba(0,0,0,0.4);
     text-align: center;
@@ -65,6 +75,7 @@ h1 {
     width: 150px;
 }
 
+
 .prof-box h1 {
     padding-top: 10px;
     padding-bottom: 20px;
@@ -72,14 +83,20 @@ h1 {
 }
 
 .social-icon {
-    height: 100px;
     font-size: 40px;
+    padding-bottom: 30px;
+
 }
 
 .social-icon i {
     padding: 10p;
     color: white;
 }
+
+.social-icon i:hover {
+    color: coral;
+}
+
 
 
 
@@ -117,6 +134,9 @@ h1 {
     padding-bottom: 0.5em;
 }
 
+.edu-custom {
+    padding-bottom: 20px;
+}
 
 
 
