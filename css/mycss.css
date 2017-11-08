@@ -11,6 +11,21 @@ h1 {
     color: #333;
 }
 
+.my-section {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.my-section h1 {
+    padding-bottom: 0.3em;
+}
+
+.block-bottom-space {
+    margin-bottom: 1em;
+}
+
+
 .companyName {
     display: block;
     padding-top: 0.4em;
@@ -29,14 +44,15 @@ h1 {
 }
 
 
+
 /* Navigation Bar */
 .nav-custom {
     margin: auto;
 }
 
 .nav-custom li{
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
     font-size: 20px;
 }
 
@@ -102,13 +118,7 @@ h1 {
 
 /* About Section */
 #about {
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-#about h1 {
-    margin-bottom: 0.5em;
+    margin-top: 1em;
 }
 
 #about p {
@@ -119,45 +129,21 @@ h1 {
 
 
 /* Education Section */
-#education {
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-#education h1 {
-    text-align: center;
-    margin: auto;
-    padding-bottom: 0.5em;
-}
-
-.edu-custom {
-    padding-bottom: 20px;
-}
 
 
 
 
 
 /* Project Section */
-#project {
-    width: 100%;
-}
-
-#project div {
-    max-width: 60em;
-    margin: auto;
-}
-
-#project h1 {
-    text-align: center;
-    padding-top: 2em;
-}
-
-#project p {
-    text-align: center;
-    line-height: 1.5;
-    padding: 1em 1em 2em 1em;
+#project-icon {
+    display: block;
+    height: 200px;
+    border: 1px solid;
+    border-color: #CCCCCC;
+    border-radius: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
 }
 
 
@@ -188,16 +174,6 @@ footer p {
     
     
 /* Education Section */
-.education1 {
-    width: 45em;
-    margin: auto;
-}
-.logo {
-    width: 120px;
-    height: 120px;
-}
-
-
     
 }
 
@@ -219,6 +195,8 @@ footer p {
 
 
 /* Screen size for phone */
+    
+    
 @media only screen and (max-width: 450px) {
 /* Navigaztion */
 
@@ -230,6 +208,5 @@ footer p {
 
 
 /* Education section */
-
 
 
