@@ -1,6 +1,17 @@
 <!-- Copyright: 2019 Banghua Zhao -->
 <!-- Contact: banghua.zhao@gmail.com -->
 
+
+<!-- Make cover image full screen and determine position of profile box -->
+
+window.onresize = window.onload = function () {
+    var jumbotron_custom = document.getElementById("jumbotron-custom");
+    jumbotron_custom.style.height = document.documentElement.clientHeight - 46 + 'px'
+    jumbotron_custom.style.minHeight = 450 + 16 + 56 + 'px';
+
+};
+
+
 <!-- Change profile picture :p -->
 
 myPorfPic = document.querySelector(".prof-pic")
@@ -37,17 +48,6 @@ $('.nav-link').on('click', function (event) {
     })
 
 });
-
-
-
-<!-- Make cover image full screen and determine position of profile box -->
-
-window.onresize = window.onload = function () {
-    var jumbotron_custom = document.getElementById("jumbotron-custom");
-    jumbotron_custom.style.height = document.documentElement.clientHeight - 46 + 'px'
-    jumbotron_custom.style.minHeight = 450 + 16 + 56 + 'px';
-
-};
 
 
 <!-- Close navbar toggler after clicking navbar item (only for mobile size screen) -->
