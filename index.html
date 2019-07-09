@@ -1,6 +1,6 @@
 <!--
     Written by Banghua Zhao
-    Date: 2018
+    Date: 2019
     Contact: banghua.zhao@gmail.com
 -->
 
@@ -11,7 +11,9 @@
 	<head>
 
 		<!-- Required meta tags -->
+        
 		<meta charset="utf-8">
+        
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -19,16 +21,15 @@
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     	<!-- My CSS -->
-		<link href="css/mycss.css" rel="stylesheet" type="text/css">
+		<link href="./css/mycss.css" rel="stylesheet" type="text/css">
 
 		<title>Homepage of Banghua Zhao</title>
 	</head>
 
 	<body>
 
-
         <!-- Navigation -->
-        <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+        <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark navbar-custom">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapseIcon" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -43,142 +44,176 @@
             </div>
         </nav>
 
-        <!-- Home Section -->
-        <section id="home" class="jumbotron vertical-center">
-            <div class="container">
-                <div class="col-6 prof-box">
-                    <img src="img/profile.jpg" class="prof-pic">
-                    <h1>Banghua Zhao</h1>
+        <!-- Home -->
+        <div class="jumbotron" id="jumbotron-custom">
+            <div class="container vertical-center" id="home">
+                <div class="col-6 prof-box" id="prof-box">
+                    <img src="./img/profile.jpg" class="prof-pic">
+                    <h1 id='my-name'>Banghua Zhao</h1>
                     <div class="container social-icon">
                         <div class="row">
                             <a class="col-md-3 col-6" href="https://www.linkedin.com/in/banghuazhao/" target="_blank" title="LinkedIn"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                             <a class="col-md-3 col-6" href="https://stackoverflow.com/users/8569905/banghua-zhao" target="_blank" title="Stackoverflow"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
                             <a class="col-md-3 col-6" href="https://github.com/banghuazhao" target="_blank" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>
-                            <a class="col-md-3 col-6" href="/doc/Resume_of_BanghuaZhao.pdf" target="_blank" title="Resume"><i class="fa fa-file-text" aria-hidden="true"></i></a>
+                            <a class="col-md-3 col-6" href="./doc/Resume_of_BanghuaZhao.pdf" target="_blank" title="Resume"><i class="fa fa-file-text" aria-hidden="true"></i></a>
                         </div>            
                     </div>
                 </div>
             </div>
-        </section>
-        
-
-        <!-- About Section -->
-        <div class="container">
-            <section id="about" class="row my-section">
-                <div class="col-lg-12">
-                    <h1>About Me</h1>
-                    <p>I am a Ph.D. student in aeronautics and astronautics engineering advised by professor <a href="https://cdmhub.org/groups/yugroup" target="_blank">Wenbin Yu</a> at Purdue University. My research lies in honeycomb sandwich structure and graphical user interface (GUI) development for <a href="http://analyswift.com/swiftcomp-vamuch-micromechanics-modeling-of-heterogeneous-materials/" target="_blank">SwiftComp</a>. Aside from my research, I am interested in computer science. Feel free to contact me over email (banghua.zhao@gmail.com).</p>
-                </div>
-            </section>
         </div>
         
         
-        <hr class="featurette-divider">
+        <div class="container marketing">
 
-        <!-- Education Section -->
-        <div class="container">
-            <section id="education" class="row my-section">
+            <!-- About -->
+            <div class="container" id="about">
                 
-                <div class="col-lg-12">
-                    <h1>My Education</h1>
-                </div>
-
-                <div class="col-md-4 block-bottom-space">
-                    <a href="http://www.purdue.edu/" target="_blank"><img class="rounded-circle" src="img/Purdue.png" alt="Purdue university logo" width="150" height="150"></a>
-                    <span class="companyName">Purdue University</span>
-                    <span class="role">Ph.D. in Aeronautics and Astronautics Engineering</span>
-                    <span class="date">Jan. 2017 - current</span>
-                </div>
-
-                <div class="col-md-4 block-bottom-space">
-                    <a href="http://www.purdue.edu/" target="_blank"><img class="rounded-circle" src="img/Purdue.png" alt="Purdue university logo" width="150" height="150"></a>
-                        <span class="companyName">Purdue University</span>
-                    <span class="role">M.S. in Aeronautics and Astronautics Engineering</span>
-                    <span class="date">Jan. 2015 - Dec. 2016</span>
-                </div>
-
-                <div class="col-md-4">
-                    <a href="http://ev.buaa.edu.cn/" target="_blank"><img class="rounded-circle" src="img/Beihang.gif" alt="Beihang university logo" width="150" height="150"></a>
-                        <span class="companyName">Beihang University</span>
-                    <span class="role">B.E. in Aerospace Engineering</span>
-                    <span class="date">Aug. 2010 - Jun. 2014</span>
-                </div>
-
-            </section>
-        </div>
-        
-        
-        <hr class="featurette-divider">
-
-        <!-- Experience Section -->
-        <div class="container">
-            <section id="experience" class="row my-section">
+                <h1 class="animation-element scale-in">About Me</h1>
                 
-                <div class="col-lg-12">
-                    <h1>My Experience</h1>
+                <div class="col-lg-12 animation-element bounce-up"> 
+                    <p>Greetings from Banghua Zhao (赵邦华)! I am a Ph.D. student in aeronautics and astronautics engineering advised by professor <a href="https://cdmhub.org/groups/yugroup" target="_blank">Wenbin Yu</a> at Purdue University. My research lies in honeycomb sandwich structure and graphical user interface (GUI) development for <a href="http://analyswift.com/swiftcomp-vamuch-micromechanics-modeling-of-heterogeneous-materials/" target="_blank">SwiftComp</a>. Aside from my research, I am interested in computer science.</p>
                 </div>
+                
+            </div>
+
+
+            <hr class="featurette-divider">
+
+            <!-- Education -->
+            <div class="container" id="education">
+                
+                <h1 class="animation-element scale-in">My Education</h1>
+                
+                <div class="row">
+                    <div class="col-lg-4 animation-element bounce-up">
+                        <a href="http://www.purdue.edu/" target="_blank"><img class="rounded-circle" src="img/Purdue.png" alt="Purdue university logo" width="140" height="140"></a>
+                        <h2>Purdue University</h2>
+                        <p>Ph.D. in Aeronautics and Astronautics Engineering</p>
+                        <span class="date">Jan. 2017 - current</span>
+                    </div>
+
+                    <div class="col-lg-4 animation-element bounce-up">
+                        <a href="http://www.purdue.edu/" target="_blank"><img class="rounded-circle" src="img/Purdue.png" alt="Purdue university logo" width="140" height="140"></a>
+                        <h2>Purdue University</h2>
+                        <p>M.S. in Aeronautics and Astronautics Engineering</p>
+                        <span class="date">Jan. 2015 - Dec. 2016</span>
+                    </div>
+
+                    <div class="col-lg-4 animation-element bounce-up">
+                        <a href="http://ev.buaa.edu.cn/" target="_blank"><img class="rounded-circle" src="img/Beihang.gif" alt="Beihang university logo" width="140" height="140"></a>
+                        <h2>Beihang University</h2>
+                        <p>B.E. (Bachelor of Engineering) in Aerospace Engineering</p>
+                        <span class="date">Aug. 2010 - Jun. 2014</span>
+                    </div>
                     
-                <div class="col-md-4 block-bottom-space">
-                    <a href="http://www.purdue.edu/" target="_blank"><img class="rounded-circle" src="img/Purdue.png" alt="Purdue university logo" width="150" height="150"></a>
-                    <span class="companyName">Purdue University</span>
-                    <span class="role">Graduate Research Assistant</span>
-                    <span class="date">Aug. 2018 - current</span>
-                </div>
-
-                <div class="col-md-4 block-bottom-space">
-                    <a href="https://www.apple.com//" target="_blank"><img src="img/Apple_logo.png" alt="Apple logo" width="120" ></a>
-                    <span class="companyName">Apple</span>
-                    <span class="role">Product Design FEA Intern</span>
-                    <span class="date">Jan. 2018 - Aug. 2018</span>
-                </div>
-
-                <div class="col-md-4">
-                    <a href="https://www.ansys.com/" target="_blank"><img id="ANSYS-logo" src="img/Ansys_logo.jpg" alt="ANSYS Inc logo" width="240" ></a>
-                    <span class="companyName">ANSYS, Inc</span>
-                    <span class="role">MAPDL Testing Engineer Intern</span>
-                    <span class="date">May. 2016 - Aug. 2016</span>
                 </div>
                 
-            </section>
-        </div>
-        
-        
-        <hr class="featurette-divider">
-        
-        <!-- Project Section -->
-        <div class="container">
-            <section id="project" class="row my-section">
+            </div>
 
-                <div class="col-lg-12">
-                    <h1>My Projects</h1>
-                </div>
 
-                <div class="col-md-4 block-bottom-space">
-                    <a href="https://itunes.apple.com/us/app/swiftcomp/id1297825946?ls=1&mt=8" target="_blank"><span id="project-icon" style="width: 200px; background: url('/img/SwiftCompIcon.jpg'); background-size: cover"></span></a>
-                    <span class="role">SwiftComp iOS app</span>
-                    <span class="date">Fall 2017</span>
-                </div>
+            <hr class="featurette-divider">
 
-                <div class="col-md-4 block-bottom-space">
-                    <a href="http://www.dpi-proceedings.com/index.php/asc32/article/view/15171" target="_blank"><span id="project-icon" style="background: url('/img/honeycomb.jpg') no-repeat; background-size: cover"></span></a>
-                    <span class="role">Multiscale Structural Analysis of Honeycomb Sandwich Structure Using Mechanics of Structure Genome</span>
-                    <span class="date">Summer 2017</span>
+            <!-- Experience -->
+            <div class="container" id="experience">
+                
+                <h1 class="animation-element scale-in">My Experience</h1>
+                
+                <div class="row">
+
+                    <div class="col-lg-4 animation-element bounce-up">
+                        <a href="http://www.purdue.edu/" target="_blank"><img class="rounded-circle" src="img/Purdue.png" alt="Purdue university logo" width="140" height="140"></a>
+                        <h2>Purdue University</h2>
+                        <p>Graduate Research Assistant</p>
+                        <span class="date">Aug. 2018 - current</span>
+                    </div>
+
+                    <div class="col-lg-4 animation-element bounce-up">
+                        <a href="https://www.apple.com" target="_blank"><img class="rounded-circle" src="img/Apple_logo.png" alt="Apple logo" height="140" ></a>
+                        <h2>Apple</h2>
+                        <p>Product Design FEA Intern</p>
+                        <span class="date">Jan. 2018 - Aug. 2018</span>
+                    </div>
+                    
+                    <div class="col-lg-4 animation-element bounce-up">
+                        <a href="http://www.purdue.edu/" target="_blank"><img class="rounded-circle" src="img/Purdue.png" alt="Purdue university logo" width="140" height="140"></a>
+                        <h2>Purdue University</h2>
+                        <p>Graduate Teaching Assistant</p>
+                        <span class="date">Aug. 2016 - Dec.2017</span>
+                    </div>
+
+                    <div class="col-lg-4 animation-element bounce-up">
+                        <a href="https://www.ansys.com/" target="_blank"><img id="ANSYS-logo" src="./img/Ansys_logo.jpg" alt="ANSYS Inc logo" height="60" ></a>
+                        <h2>ANSYS, Inc</h2>
+                        <p>MAPDL Testing Engineer Intern</p>
+                        <span class="date">May. 2016 - Aug. 2016</span>
+                    </div>
+
                 </div>
                 
-                <div class="col-md-4">
-                    <a href="https://www.linkedin.com/pulse/ansys-swiftcomp-gui-ansys-plugin-multiscale-modeling-banghua-zhao/" target="_blank"><span id="project-icon" style="background: url('/img/ANSYS-SwiftComp_GUI.jpg') no-repeat; background-size: cover"></span></a>
-                    <span class="role">ANSYS-SwiftComp GUI</span>
-                    <span class="date">Spring 2016</span>
-                </div>
+            </div>
 
-            </section>
-        
+
+            <hr class="featurette-divider">
+
+            <!-- Project -->
+            <div class="container" id="project">
+                
+                <h1 class="animation-element scale-in">My Projects</h1>
+                
+                <div class="row">
+                    
+                    <div class="col-lg-4 animation-element bounce-up">
+                        <a href="https://www.linkedin.com/pulse/ansys-workbench-swiftcomp-gui-extension-multiscale-modeling-zhao" target="_blank"><span id="project-icon" style="background: url('./img/honeycomb_bending_stiffness.png') center; no-repeat; background-size: cover"></span></a>
+                        <h2>Research</h2>
+                        <p>Characterization of Bending Stiffness for Honeycomb Sandwich Plate in Three-Point Bending Test Using Mechanics of Structure Genome</p>
+                        <span class="date">Fall 2018 - current</span>
+                    </div>
+                    
+                    <div class="col-lg-4 animation-element bounce-up">
+                        <a href="https://itunes.apple.com/us/app/swiftcomp/id1297825946?ls=1&mt=8" target="_blank"><span id="project-icon" style="width: 200px; background: url('./img/SwiftCompIcon.jpg'); background-size: cover"></span></a>
+                        <h2>iOS App</h2>
+                        <p>SwiftComp iOS app</p>
+                        <span class="date">Fall 2017 - current</span>
+                    </div>
+                    
+                    <div class="col-lg-4 animation-element bounce-up">
+                        <a href="https://www.linkedin.com/pulse/ansys-workbench-swiftcomp-gui-extension-multiscale-modeling-zhao" target="_blank"><span id="project-icon" style="background: url('./img/ANSYS_Workbench_SwiftComp_GUI.png') center; no-repeat; background-size: cover"></span></a>
+                        <h2>Research</h2>
+                        <p>ANSYS Workbench SwiftComp GUI</p>
+                        <span class="date">Summer 2017 - current</span>
+                    </div>
+
+                    <div class="col-lg-4 animation-element bounce-up">
+                        <a href="http://www.dpi-proceedings.com/index.php/asc32/article/view/15171" target="_blank"><span id="project-icon" style="background: url('./img/honeycomb.jpg') center; no-repeat; background-size: cover"></span></a>
+                        <h2>Comference Paper</h2>
+                        <p>Multiscale Structural Analysis of Honeycomb Sandwich Structure Using Mechanics of Structure Genome</p>
+                        <span class="date">Summer 2017</span>
+                    </div>
+                    
+                    <div class="col-lg-4 animation-element bounce-up">
+                        <a href="https://www.researchgate.net/publication/311511366_Analysis_of_Composite_Plates_by_Using_Mechanics_of_Structure_Genome_and_Comparison_with_ANSYS" target="_blank"><span id="project-icon" style="width:200px; background: url('./img/master_thesis.png') center; no-repeat; background-size: cover"></span></a>
+                        <h2>Master Thesis</h2>
+                        <p>Analysis of Composite Plates by Using Mechanics of Structure Genome and Comparison with ANSYS</p>
+                        <span class="date">Fall 2016</span>
+                    </div>
+
+                    <div class="col-lg-4 animation-element bounce-up">
+                        <a href="https://www.linkedin.com/pulse/ansys-swiftcomp-gui-ansys-plugin-multiscale-modeling-banghua-zhao/" target="_blank"><span id="project-icon" style="background: url('./img/ANSYS-SwiftComp_GUI.jpg') center; no-repeat; background-size: cover"></span></a>
+                        <h2>Research</h2>
+                        <p>ANSYS-SwiftComp GUI</p>
+                        <span class="date">Spring 2016</span>
+                    </div>
+
+                </div>
+            
+            </div>
+            
+            <hr class="featurette-divider">
+            
         </div>
             
-        <footer>
-            <div class="footer">
-                <p>Copyright &copy; 2018 Banghua Zhao</p>
-            </div>
+        <footer class="container footer">
+            <p>Copyright &copy; 2019 Banghua Zhao</p>
         </footer>
 
         <!-- I use jQuery full version instead of slim -->
@@ -189,38 +224,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
         
         
-        <!-- Change profile picture :p -->
-        <script>
-            myPorfPic = document.querySelector(".prof-pic")
-
-            myPorfPic.addEventListener("mouseover",function() {
-              myPorfPic.setAttribute("src","img/profile2.jpg");
-            });
-            myPorfPic.addEventListener("mouseout",function() {
-              myPorfPic.setAttribute("src","img/profile.jpg");
-            });
-        
-        </script>
-        
-        <!-- nav scroll to id -->
-        <script>
-            $('a[href*="#"]').on('click', function (e) {
-                e.preventDefault();
-                
-                var anchorY = $($(this).attr('href')).offset().top
-                
-                if ((Math.abs(window.scrollY-anchorY)) < 1000) {
-                    $('html, body').animate({
-                        scrollTop: anchorY - 100
-                    }, Math.abs(window.scrollY-anchorY)*0.5, 'linear');
-                } else {
-                    $('html, body').animate({
-                        scrollTop: anchorY - 100
-                    }, 500, 'linear');
-                }
-                
-            });
-        </script>
+        <script src="./js/main.js"></script>
 
 
 	</body>

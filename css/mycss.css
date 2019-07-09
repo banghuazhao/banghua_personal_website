@@ -2,41 +2,19 @@
 
 
 body {
-    font-family: "Helvetica", "Arial", sans-serif;
-    color: #555;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #5a5a5a;
 }
 
 h1 {
     text-align: center;
     color: #333;
+    padding-bottom: 50px;
+    font-weight: 400;
+    font-size: 3rem;
 }
 
-.my-section {
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-.my-section h1 {
-    padding-bottom: 0.3em;
-}
-
-.block-bottom-space {
-    margin-bottom: 1em;
-}
-
-
-.companyName {
-    display: block;
-    padding-top: 0.4em;
-    font-size: 20px;
-    
-}
-
-.role {
-    display: block;
-    
-}
 
 .date {
     color: darkgray;
@@ -45,7 +23,36 @@ h1 {
 
 
 
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.marketing h2 {
+    font-weight: 340;
+    font-size: 180%;
+    padding-top: 10px;
+}
+
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+    margin-bottom: 5px;
+}
+
+.featurette-divider {
+    margin: 4rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+
+
+
 /* Navigation Bar */
+
 .nav-custom {
     margin: auto;
 }
@@ -57,14 +64,61 @@ h1 {
 }
 
 
+/* Scroll-based animation */
+
+.scale-in {
+  opacity: 0;
+  -moz-transition: all 500ms linear;
+  -webkit-transition: all 500ms linear;
+  -o-transition: all 500ms linear;
+  transition: all 500ms linear;
+  -moz-transform: scale(1.3,1.3);
+  -webkit-transform: scale(1.3,1.3);
+  -o-transform: scale(1.3,1.3);
+  -ms-transform: scale(1.3,1.3);
+  transform: scale(1.3,1.3);
+}
+
+.scale-in.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.bounce-up {
+  opacity: 0;
+  -moz-transition: all 500ms ease-out;
+  -webkit-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+  -moz-transform: translate3d(0px, 100px, 0px);
+  -webkit-transform: translate3d(0px, 100px, 0px);
+  -o-transform: translate(0px, 100px);
+  -ms-transform: translate(0px, 100px);
+  transform: translate3d(0px, 100, 0px);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.bounce-up.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+
+
 /* Home */
 
-#home {
-    background: url('/img/background.jpg') no-repeat center center;
+.jumbotron {
+    background: url("../img/background.jpg")  no-repeat center center;
     background-size: cover;
-    height: 600px; 
-    padding: 0;
-    margin: 0;
 }
 
 .vertical-center {
@@ -74,11 +128,13 @@ h1 {
 
 
 .prof-box {
-    min-width: 300px;
+    height: 450px;
+    min-width: 350px;
     background: rgba(0,0,0,0.4);
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 }
 
 .prof-pic {
@@ -90,19 +146,18 @@ h1 {
 
 
 .prof-box h1 {
-    padding-top: 10px;
-    padding-bottom: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     color: white;
 }
 
 .social-icon {
     font-size: 40px;
-    padding-bottom: 30px;
-
+    padding-bottom: 10px;
 }
 
 .social-icon i {
-    padding: 10p;
+    padding: 10px;
     color: white;
 }
 
@@ -114,11 +169,9 @@ h1 {
 
 
 
-
-
-/* About Section */
+/* About */
 #about {
-    margin-top: 1em;
+    margin-top: 6em;
 }
 
 #about p {
@@ -128,17 +181,19 @@ h1 {
 
 
 
-/* Education Section */
+/* Education */
 
 
-/* Experience Section */
+/* Experience  */
+
 #ANSYS-logo {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 
-/* Project Section */
+
+/* Project  */
 #project-icon {
     display: block;
     height: 200px;
@@ -151,66 +206,61 @@ h1 {
 }
 
 
-/* Footer Section */
-
-footer {
-    padding: 20px 0;
-    width: 100%;
-    background: black;
-    color: white;
-}
-
-footer p {
+/* footer */
+.footer {
     text-align: center;
-    margin: auto;
 }
 
 
 
+/* Extra small devices (portrait phones, less than 576px) No media query since this is the default in Bootstrap*/
 
-
-
-/* Screen size for pad-pro */
-@media only screen and (max-width: 1024px) and (min-width: 768px) {
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .nav-custom li{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     
-/* About Section */
-    
-    
-    
-/* Education Section */
+    .prof-box {
+        min-width: 400px;
+    }
     
 }
 
-
-
-
-/* Screen size for pad */
-@media only screen and (max-width: 768px) and (min-width: 450px)  {
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
     
-/* Navigaztion */
-
-
+    .nav-custom li{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     
-/* About Section */
-    
-    
-/* Education section */
+    .prof-pic {
+        margin-top: 40px;
+    }
+    .prof-box h1 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        color: white;
+    }
 
+}
 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .nav-custom li{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
 
-/* Screen size for phone */
-    
-    
-@media only screen and (max-width: 450px) {
-/* Navigaztion */
-
-
-
-
-/* About */
-
-
-
-/* Education section */
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .nav-custom li{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
 
 
