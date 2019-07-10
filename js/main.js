@@ -128,3 +128,8 @@ function check_if_in_view() {
 
 $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
+
+
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})

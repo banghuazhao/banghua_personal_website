@@ -19,8 +19,14 @@ h1 {
 .date {
     color: darkgray;
     font-size: 14px;
+    padding-bottom: 10px;
 }
 
+.icon-shadow:hover {
+    -webkit-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+}
 
 
 /* MARKETING CONTENT
@@ -46,6 +52,11 @@ h1 {
 
 .featurette-divider {
     margin: 4rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+.featurette-divider-popover {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
