@@ -121,15 +121,16 @@ h1 {
     background-size: cover;
 }
 
+
 .vertical-center {
     display: flex;
-    align-items: center;
+    padding: 0px;
 }
 
 
 .prof-box {
-    height: 450px;
-    min-width: 350px;
+    height: 500px;
+    min-width: 280px;
     background: rgba(0,0,0,0.4);
     text-align: center;
     margin-left: auto;
@@ -138,17 +139,31 @@ h1 {
 }
 
 .prof-pic {
-    margin-top: 40px;
+    margin-top: 20px;
     border-radius: 50%;
     height: 150px;
     width: 150px;
 }
 
 
-.prof-box h1 {
-    padding-top: 25px;
-    padding-bottom: 25px;
+#my-name {
+    margin-top: 10px;
+    margin-bottom: 20px;
     color: white;
+    font-size:40px;
+}
+
+.btn-rounded-white {
+    display: inline-block;
+    color: #fff;
+    padding: 15px 25px;
+    border: 3px solid #fff;
+    border-radius: 30px;
+    -webkit-transition: .5s ease all;
+    transition: .5s ease all;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 25px;
 }
 
 .social-icon {
@@ -236,14 +251,24 @@ h1 {
         padding-right: 20px;
     }
     
+    .prof-box { 
+        width: 500px;
+    }
+    
     .prof-pic {
         margin-top: 40px;
     }
+    
     .prof-box h1 {
         padding-top: 40px;
         padding-bottom: 40px;
         color: white;
     }
+    
+    .social-icon {
+        padding-top: 10px;
+    }
+    
 
 }
 
@@ -253,6 +278,12 @@ h1 {
         padding-left: 30px;
         padding-right: 30px;
     }
+    
+    .prof-box { 
+        width: 600px;
+    }
+    
+    
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -260,6 +291,10 @@ h1 {
     .nav-custom li{
         padding-left: 40px;
         padding-right: 40px;
+    }
+    
+    .prof-box { 
+        width: 700px;
     }
 }
 

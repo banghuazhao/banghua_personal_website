@@ -2,83 +2,75 @@
 <!-- Contact: banghua.zhao@gmail.com -->
 
 
-<!-- Make cover image full screen and determine position of profile box -->
-
-window.onresize = window.onload = function () {
-    var jumbotron_custom = document.getElementById("jumbotron-custom");
-    jumbotron_custom.style.height = document.documentElement.clientHeight - 46 + 'px'
-    jumbotron_custom.style.minHeight = 450 + 16 + 56 + 'px';
-
-};
-
-
-<!-- Change profile picture :p -->
-
-myPorfPic = document.querySelector(".prof-pic")
-
-myPorfPic.addEventListener("mouseover",function() {
-  myPorfPic.setAttribute("src","img/profile2.jpg");
-});
-myPorfPic.addEventListener("mouseout",function() {
-  myPorfPic.setAttribute("src","img/profile.jpg");
-});
-
-
-<!-- nav scroll to id -->
-
-$('.nav-link').on('click', function (event) {
-    event.preventDefault();
-
-    var anchorY = $($(this).attr('href')).offset().top
-
-    if ((Math.abs(window.scrollY-anchorY)) < 1000) {
-        $('html, body').animate({
-            scrollTop: anchorY - 100
-        }, Math.abs(window.scrollY-anchorY)*0.5, 'linear');
-    } else {
-        $('html, body').animate({
-            scrollTop: anchorY - 100
-        }, 500, 'linear');
-    }
-
-    $(this).on('mouseenter', () => {
-      $(this).css('color', 'rgba(255,255,255,0.8)');
-    }).on('mouseleave', () => {
-      $(this).css('color', 'rgba(255,255,255,0.5)');
-    })
-
-});
-
-
-<!-- Close navbar toggler after clicking navbar item (only for mobile size screen) -->
+<!-- navigation bar event -->
 
 $(document).ready(() => {
+
+  <!-- nav scroll to id -->
+
+  $('.nav-link').on('click', function (event) {
+      event.preventDefault();
+
+      var anchorY = $($(this).attr('href')).offset().top
+
+      if ((Math.abs(window.scrollY-anchorY)) < 1000) {
+          $('html, body').animate({
+              scrollTop: anchorY - 100
+          }, Math.abs(window.scrollY-anchorY)*0.5, 'linear');
+      } else {
+          $('html, body').animate({
+              scrollTop: anchorY - 100
+          }, 500, 'linear');
+      }
+
+      $(this).on('mouseenter', () => {
+        $(this).css('color', 'rgba(255,255,255,0.8)');
+      }).on('mouseleave', () => {
+        $(this).css('color', 'rgba(255,255,255,0.5)');
+      })
+
+  });
+
+  <!-- Close navbar toggler after clicking navbar item (only for mobile size screen) -->
+
   $('.nav-item').on('click', () => {
     if(document.documentElement.clientWidth <= 576) {
       $('.navbar-toggler').click();
     }
   })
+
+
 });
 
 
 
-<!-- Change My name to Chinese -->
-
-myName = document.querySelector("#my-name")
-
-myName.addEventListener("mouseover",function() {
-  myName.innerHTML = "赵邦华";
-});
-myName.addEventListener("mouseout",function() {
-  myName.innerHTML = "Banghua Zhao";
-});
-
-
-
-<!-- Change social icon size when mouse enter or leave -->
+<!-- mouse event for profile box -->
 
 $(document).ready(() => {
-  $('.fa').on('mouseenter', event => {
+
+  <!-- Change profile picture :p -->
+
+  $('.prof-pic').on('mouseenter', () => {
+
+    $('.prof-pic').attr("src","./img/profile2.jpg");
+
+  }).on('mouseleave', () => {
+
+    $('.prof-pic').attr("src","./img/profile1.png");
+
+  })
+
+  <!-- Change My name to Chinese -->
+
+  $('#my-name').on('mouseenter', () => {
+    $('#my-name').html('赵邦华')
+  }).on('mouseleave', () => {
+    $('#my-name').html('Banghua Zhao')
+  })
+
+  <!-- Change social icon size when mouse enter or leave -->
+
+  $('.fab').on('mouseenter', event => {
     $(event.currentTarget).animate({
       fontSize: '50px',
       padding: '0px'
@@ -89,7 +81,23 @@ $(document).ready(() => {
       padding: '10px'
     }, 200)
   })
+
+  <!-- Change resume button when mouseover -->
+
+  $('.btn-rounded-white').on('mouseenter', event => {
+    $(event.currentTarget).css({
+      backgroundColor: 'white',
+      color: 'blue'
+    })
+  }).on('mouseleave', event => {
+    $(event.currentTarget).css({
+      backgroundColor: 'transparent',
+      color: 'white'
+    })
+  })
+
 })
+
 
 
 <!-- Add scroll-based animation for elements -->
