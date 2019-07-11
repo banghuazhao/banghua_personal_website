@@ -2,6 +2,13 @@
 <!-- Contact: banghua.zhao@gmail.com -->
 
 
+<!-- Lazy loading images -->
+
+$(function() {
+  $('.lazy').lazy();
+});
+
+
 <!-- navigation bar event -->
 
 $(document).ready(() => {

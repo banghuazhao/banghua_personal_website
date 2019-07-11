@@ -1,6 +1,5 @@
 /* Global Style */
 
-
 body {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -27,6 +26,7 @@ h1 {
     -webkit-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
     box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
 }
+
 
 
 /* MARKETING CONTENT
@@ -63,6 +63,10 @@ h1 {
 
 
 /* Navigation Bar */
+
+.navbar {
+    width: 100%;
+}
 
 .nav-custom {
     margin: auto;
@@ -154,6 +158,8 @@ h1 {
     border-radius: 50%;
     height: 150px;
     width: 150px;
+    background: url('../img/Rolling-1s-200px.gif') no-repeat center center;
+    background-size: cover;
 }
 
 
@@ -208,6 +214,13 @@ h1 {
 
 
 /* Education */
+.company-img {
+    height: 140px;
+    width: 140px;
+    margin: auto;
+    background: url('../img/Rolling-1s-200px.gif') no-repeat center center;
+    background-size: cover;
+}
 
 
 /* Experience  */
@@ -215,20 +228,29 @@ h1 {
 #ANSYS-logo {
     margin-top: 40px;
     margin-bottom: 40px;
+    background: url('../img/Rolling-1s-200px.gif') no-repeat center center;
+    background-size: cover;
+}
+
+#apple-img {
+    height: 140px;
+    width: 140px;
+    margin: auto;
+    background: url('../img/Rolling-1s-200px.gif') no-repeat center center;
+    background-size: cover;
 }
 
 
 
 /* Project  */
-#project-icon {
-    display: block;
+
+.project-img {
     height: 200px;
     border: 1px solid;
     border-color: #CCCCCC;
     border-radius: 2em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1em;
+    background: url('../img/Rolling-1s-200px.gif') no-repeat center center; 
+    background-size: cover;
 }
 
 
@@ -308,5 +330,18 @@ h1 {
         width: 700px;
     }
 }
+
+
+/* Remove the white space at right for iOS device */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),    
+only screen and (min-device-pixel-ratio: 1.5){
+    html, body{
+        width:100%;
+        overflow-x:hidden;
+      }
+}
+
 
 
