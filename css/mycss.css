@@ -27,6 +27,32 @@ h1 {
     box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
 }
 
+.popover{
+    max-width: 96%;   
+}
+
+.popover-body {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.popover-body::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.popover-body::-webkit-scrollbar:vertical {
+    width: 11px;
+}
+
+.popover-body::-webkit-scrollbar:horizontal {
+    height: 11px;
+}
+
+.popover-body::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid white; /* should match background, can't be transparent */
+    background-color: rgba(0, 0, 0, .5);
+}
 
 
 /* MARKETING CONTENT
@@ -72,10 +98,10 @@ h1 {
     margin: auto;
 }
 
-.nav-custom li{
-    padding-left: 30px;
-    padding-right: 30px;
+
+.nav-link {
     font-size: 20px;
+    text-align: center;
 }
 
 
@@ -255,6 +281,26 @@ h1 {
 }
 
 
+.project-img-square {
+    height: 200px;
+    width: 200px;
+    border: 1px solid;
+    border-color: #CCCCCC;
+    border-radius: 2em;
+    background: url('../img/Rolling-1s-200px.gif') no-repeat center center; 
+    background-size: cover;
+}
+
+
+
+/* hobby */
+
+
+#map {
+    height: 400px;
+}
+
+
 /* footer */
 .footer {
     text-align: center;
@@ -262,13 +308,24 @@ h1 {
 
 
 
+
+
+
+
+
+
 /* Extra small devices (portrait phones, less than 576px) No media query since this is the default in Bootstrap*/
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
+    
+    .popover{
+        max-width: 360px;   
+    }
+    
     .nav-custom li{
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     
     .prof-box {
