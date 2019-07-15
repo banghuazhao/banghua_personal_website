@@ -5,7 +5,11 @@
 <!-- Lazy loading images -->
 
 $(function() {
-  $('.lazy').lazy();
+  $('.lazy').lazy({
+    onError: function(element) {
+        console.log('error loading ' + element.data('src'));
+    }
+  });
 });
 
 
@@ -157,5 +161,5 @@ $('[data-fancybox="images"]').fancybox({
 });
 
 $(".travel-image").on("mouseover", function() {
-  
+
 })

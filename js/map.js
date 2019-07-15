@@ -156,8 +156,6 @@ var geoCountryArray = [
   geo_china
 ]
 
-selectImagesToDisplay(geo_usa.name);
-
 function selectImagesToDisplay(selectedClass) {
 
   $(".img-gallery").fadeTo(100, 0.1);
@@ -168,4 +166,5 @@ function selectImagesToDisplay(selectedClass) {
     $("." + selectedClass).fadeIn();
     $(".img-gallery").fadeTo(300, 1);
   }, 300);
+
 };
