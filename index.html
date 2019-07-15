@@ -19,9 +19,17 @@
         <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
         
         <link href="./fontawesome/css/all.min.css" rel="stylesheet">
+        
+        <link rel="stylesheet" href="./leaflet/leaflet.css" />
+        
+        <link rel="stylesheet" href="./fancybox/jquery.fancybox.min.css">
 
     	<!-- My CSS -->
 		<link href="./css/mycss.css" rel="stylesheet" type="text/css">
+        
+        <!-- Load geoJson objects -->
+        <script src="./data/countries/USA.geo.js"></script>
+        <script src="./data/countries/CHN.geo.js"></script>
 
 		<title>Homepage of Banghua Zhao</title>
 	</head>
@@ -72,8 +80,10 @@
                 
                 <h1 class="animation-element scale-in">About Me</h1>
                 
-                <div class="col-lg-12 animation-element bounce-up"> 
-                    <p>Greetings from Banghua Zhao (赵邦华)! I am a Ph.D. student in aeronautics and astronautics engineering advised by professor <a href="https://cdmhub.org/groups/yugroup" target="_blank">Wenbin Yu</a> at Purdue University. My research lies in honeycomb sandwich structure and graphical user interface (GUI) development for <a href="http://analyswift.com/swiftcomp-vamuch-micromechanics-modeling-of-heterogeneous-materials/" target="_blank">SwiftComp</a>. Aside from my research, I am interested in computer science.</p>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-10 animation-element bounce-up "> 
+                        <p>Greetings from Banghua Zhao (赵邦华)! I am a Ph.D. student in aeronautics and astronautics engineering advised by professor <a href="https://cdmhub.org/groups/yugroup" target="_blank">Wenbin Yu</a> at Purdue University. My research lies in honeycomb sandwich structure and graphical user interface (GUI) development for <a href="http://analyswift.com/swiftcomp-vamuch-micromechanics-modeling-of-heterogeneous-materials/" target="_blank">SwiftComp</a>. Aside from my research, I am interested in computer science.</p>
+                    </div>
                 </div>
                 
             </div>
@@ -278,10 +288,99 @@
                 
                 <h1 class="animation-element scale-in">My Hobbies</h1>
                 
-                <div class="row justify-content-md-center">
-                    <div id="map" class="lazy col-12 col-md-10 col-lg-8"></div>
+                <div class="row justify-content-center map-div">
+                    
+                    <p class="col-12 col-lg-10" style="text-align: center">I like travel. By visting different places, I can enjoy the beauty of nature, discover the diversity of culture and experience the meaning of life. Check out the places I have visited.</p>
+                    
+                    <div id="map-world" class="map lazy col-12 col-lg-6"></div>
+                    <div id="map-country" class="map lazy col-12 col-lg-6"></div>
+                    
                 </div>
-            
+                        
+                
+                <div class="row img-gallery">
+                    
+                    <div class="col-4 col-lg-3 travel-image usa">
+                        <a class="lazy" data-fancybox="images" href="./img/travel/usa/deathValley_1.jpg" >
+                            <img class="img-fluid" src="./img/travel/usa/deathValley_1.jpg" />
+                        </a>
+                    </div>
+
+                    <div class="col-4 col-lg-3 travel-image usa">
+                        <a class="lazy" data-fancybox="images"  href="./img/travel/usa/grandCanyon_1.jpg" >
+                            <img class="img-fluid" src="./img/travel/usa/grandCanyon_1.jpg">
+                        </a>
+                    </div>
+
+                    <div class="col-4 col-lg-3 travel-image usa">
+                        <a class="lazy" data-fancybox="images" href="./img/travel/usa/yellowstone_1.jpg" >
+                            <img class="img-fluid" src="./img/travel/usa/yellowstone_1.jpg">
+                        </a>
+                    </div>
+                    
+                    <div class="col-4 col-lg-3 travel-image usa">
+                        <a class="lazy" data-fancybox="images" href="./img/travel/usa/yellowstone_2.jpg" >
+                            <img class="img-fluid" src="./img/travel/usa/yellowstone_2.jpg">
+                        </a>
+                    </div>
+                    
+                    <div class="col-4 col-lg-3 travel-image usa">
+                        <a class="lazy" data-fancybox="images" href="./img/travel/usa/yosemite_1.jpg" >
+                            <img class="img-fluid" src="./img/travel/usa/yosemite_1.jpg">
+                        </a>
+                    </div>
+                    
+                    <div class="col-4 col-lg-3 travel-image usa">
+                        <a class="lazy" data-fancybox="images" href="./img/travel/usa/yosemite_2.jpg" >
+                            <img class="img-fluid" src="./img/travel/usa/yosemite_2.jpg">
+                        </a>
+                    </div>
+                    
+                    <div class="col-4 col-lg-3 travel-image china">
+                        <a class="lazy" data-fancybox="images" href="./img/travel/china/biPengGou_1.jpg" >
+                            <img class="img-fluid" src="./img/travel/china/biPengGou_1.jpg">
+                        </a>
+                    </div>
+                    
+                    <div class="col-4 col-lg-3 travel-image china">
+                        <a class="lazy" data-fancybox="images" href="./img/travel/china/biPengGou_2.jpg" >
+                            <img class="img-fluid" src="./img/travel/china/biPengGou_2.jpg">
+                        </a>
+                    </div>
+                    
+                    <div class="col-4 col-lg-3 travel-image china">
+                        <a class="lazy" data-fancybox="images" href="./img/travel/china/biPengGou_3.jpg" >
+                            <img class="img-fluid" src="./img/travel/china/biPengGou_3.jpg">
+                        </a>
+                    </div>
+                    
+                    <div class="col-4 col-lg-3 travel-image china">
+                        <a class="lazy" data-fancybox="images" href="./img/travel/china/chengDu_1.jpg" >
+                            <img class="img-fluid" src="./img/travel/china/chengDu_1.jpg">
+                        </a>
+                    </div>
+                    
+                    <div class="col-4 col-lg-3 travel-image china">
+                        <a class="lazy" data-fancybox="images" href="./img/travel/china/duJiangYan_1.jpg" >
+                            <img class="img-fluid" src="./img/travel/china/duJiangYan_1.jpg">
+                        </a>
+                    </div>
+                    
+                    <div class="col-4 col-lg-3 travel-image china">
+                        <a class="lazy" data-fancybox="images" href="./img/travel/china/wuHan_1.jpg" >
+                            <img class="img-fluid" src="./img/travel/china/wuHan_1.jpg">
+                        </a>
+                    </div>
+                    
+                    <div class="col-4 col-lg-3 travel-image china">
+                        <a class="lazy" data-fancybox="images" href="./img/travel/china/wuHan_2.jpg" >
+                            <img class="img-fluid" src="./img/travel/china/wuHan_2.jpg">
+                        </a>
+                    </div>
+                        
+                </div>
+                    
+                    
             </div>
             
             
@@ -299,7 +398,13 @@
         
         <script src="./bootstrap/bootstrap.bundle.min.js"></script>
         
-        <script async defer src="http://maps.google.cn/maps/api/js?key=AIzaSyCK-gbXa6voQeZGSzh_ShQpNskJt0kwZ5U&callback=initMap"></script>
+        <script src="./leaflet/leaflet.js"></script>
+        
+        <script src="./leaflet/bouncemarker.js"></script>
+        
+        <script src="./fancybox/jquery.fancybox.min.js"></script>
+        
+        <script src="./js/map.js"></script>
         
         <script src="./js/main.js"></script>
 

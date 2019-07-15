@@ -234,7 +234,7 @@ h1 {
 }
 
 #about p {
-    text-align: left;
+    text-align: center;
 }
 
 
@@ -295,11 +295,36 @@ h1 {
 
 /* hobby */
 
-
-#map {
-    height: 400px;
+.map {
+    margin: 5px;
 }
 
+
+#map-world {
+    max-width: 450px;
+    height: 260px;
+}
+
+#map-country {
+    max-width: 450px;
+    height: 260px;
+}
+
+#hobby p {
+    padding-bottom: 20px;
+}
+
+.map-div {
+    padding-bottom: 20px;
+}
+
+.travel-image {
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: url('../img/Rolling-1s-200px.gif') no-repeat center center;
+    background-size: cover;
+}
 
 /* footer */
 .footer {
