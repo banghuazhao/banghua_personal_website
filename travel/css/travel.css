@@ -23,11 +23,11 @@ p {
 .img-gallery {
     padding: 0px;
     margin: 0px;  
+    min-height: 360px;
 }
 
 .travel-image {
     margin-bottom: 20px;
-
     padding-left: 10px;
     padding-right: 10px;
     -webkit-transition: all .2s ease-in-out;
@@ -42,6 +42,7 @@ p {
     -o-transform: scale(1.1);
     transform: scale(1.1);
 }
+
 
 
 /* Remove the white space at right for iOS device */
