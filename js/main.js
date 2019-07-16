@@ -145,21 +145,3 @@ $window.trigger('scroll');
 $(function () {
   $('[data-toggle="popover"]').popover()
 })
-
-
-// fancybox
-
-$('[data-fancybox="images"]').fancybox({
-  buttons : [
-    'slideShow',
-    "thumbs",
-    'close'
-  ],
-  thumbs : {
-    autoStart : false
-  }
-});
-
-$(".travel-image").on("mouseover", function() {
-
-})

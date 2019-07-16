@@ -16,20 +16,14 @@
         
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+        <link href="./bootstrap/bootstrap.min.css" rel="stylesheet">
         
         <link href="./fontawesome/css/all.min.css" rel="stylesheet">
         
-        <link rel="stylesheet" href="./leaflet/leaflet.css" />
-        
-        <link rel="stylesheet" href="./fancybox/jquery.fancybox.min.css">
+        <link href="./fancybutton/fancy-buttons.css" rel="stylesheet">
 
     	<!-- My CSS -->
 		<link href="./css/mycss.css" rel="stylesheet" type="text/css">
-        
-        <!-- Load geoJson objects -->
-        <script src="./data/countries/USA.geo.js"></script>
-        <script src="./data/countries/CHN.geo.js"></script>
 
 		<title>Homepage of Banghua Zhao</title>
 	</head>
@@ -288,98 +282,15 @@
                 
                 <h1 class="animation-element scale-in">My Hobbies</h1>
                 
-                <div class="row justify-content-center map-div">
+                <div class="row justify-content-center">
                     
                     <p class="col-12 col-lg-10" style="text-align: center">I like travel. By visting different places, I can enjoy the beauty of nature, discover the diversity of culture and experience the meaning of life. Check out the places I have visited.</p>
                     
-                    <div id="map-world" class="lazy map col-12 col-lg-6"></div>
-                    <div id="map-country" class="lazy map col-12 col-lg-6"></div>
-                    
-                </div>
-                        
-                
-                <div class="row img-gallery">
-                    
-                    <div class="col-4 col-lg-3 travel-image usa">
-                        <a data-fancybox="images" href="./img/travel/usa/deathValley_1.jpg" > 
-                            <img class="lazy img-fluid" data-src="./img/travel/usa/deathValley_1.jpg" />
-                        </a>
-                    </div>
-
-                    <div class="col-4 col-lg-3 travel-image usa">
-                        <a data-fancybox="images"  href="./img/travel/usa/grandCanyon_1.jpg" >
-                            <img class="lazy img-fluid" data-src="./img/travel/usa/grandCanyon_1.jpg">
-                        </a>
-                    </div>
-
-                    <div class="lazy col-4 col-lg-3 travel-image usa">
-                        <a data-fancybox="images" href="./img/travel/usa/yellowstone_1.jpg" >
-                            <img class="lazy img-fluid" data-src="./img/travel/usa/yellowstone_1.jpg">
-                        </a>
+                    <div class="map-div col-12 col-lg-8 fancy-button animation-element bounce-up">
+                        <a href="./travel/index.html"  target="_blank"><img class="lazy img-fluid" data-src="./img/travel.png"/></a>
                     </div>
                     
-                    <div class="col-4 col-lg-3 travel-image usa">
-                        <a data-fancybox="images" href="./img/travel/usa/yellowstone_2.jpg" >
-                            <img class="lazy img-fluid" data-src="./img/travel/usa/yellowstone_2.jpg">
-                        </a>
-                    </div>
-                    
-                    <div class="col-4 col-lg-3 travel-image usa">
-                        <a data-fancybox="images" href="./img/travel/usa/yosemite_1.jpg" >
-                            <img class="lazy img-fluid" data-src="./img/travel/usa/yosemite_1.jpg">
-                        </a>
-                    </div>
-                    
-                    <div class="col-4 col-lg-3 travel-image usa">
-                        <a data-fancybox="images" href="./img/travel/usa/yosemite_2.jpg" >
-                            <img class="lazy img-fluid" data-src="./img/travel/usa/yosemite_2.jpg">
-                        </a>
-                    </div>
-                    
-                    <div class="col-4 col-lg-3 travel-image china">
-                        <a data-fancybox="images" href="./img/travel/china/biPengGou_1.jpg" >
-                            <img class="lazy img-fluid" data-src="./img/travel/china/biPengGou_1.jpg">
-                        </a>
-                    </div>
-                    
-                    <div class="col-4 col-lg-3 travel-image china">
-                        <a data-fancybox="images" href="./img/travel/china/biPengGou_2.jpg" >
-                            <img class="lazy img-fluid" data-src="./img/travel/china/biPengGou_2.jpg">
-                        </a>
-                    </div>
-                    
-                    <div class="col-4 col-lg-3 travel-image china">
-                        <a data-fancybox="images" href="./img/travel/china/biPengGou_3.jpg" >
-                            <img class="lazy img-fluid" data-src="./img/travel/china/biPengGou_3.jpg">
-                        </a>
-                    </div>
-                    
-                    <div class="col-4 col-lg-3 travel-image china">
-                        <a data-fancybox="images" href="./img/travel/china/chengDu_1.jpg" >
-                            <img class="lazy img-fluid" data-src="./img/travel/china/chengDu_1.jpg">
-                        </a>
-                    </div>
-                    
-                    <div class="col-4 col-lg-3 travel-image china">
-                        <a data-fancybox="images" href="./img/travel/china/duJiangYan_1.jpg" >
-                            <img class="lazy img-fluid" data-src="./img/travel/china/duJiangYan_1.jpg">
-                        </a>
-                    </div>
-                    
-                    <div class="col-4 col-lg-3 travel-image china">
-                        <a data-fancybox="images" href="./img/travel/china/wuHan_1.jpg" >
-                            <img class="lazy img-fluid" data-src="./img/travel/china/wuHan_1.jpg">
-                        </a>
-                    </div>
-                    
-                    <div class="col-4 col-lg-3 travel-image china">
-                        <a data-fancybox="images" href="./img/travel/china/wuHan_2.jpg" >
-                            <img class="lazy img-fluid" data-src="./img/travel/china/wuHan_2.jpg">
-                        </a>
-                    </div>
-                        
-                </div>
-                    
+                </div>   
                     
             </div>
             
@@ -394,17 +305,11 @@
 
         <script src="./jquery/jquery-3.4.1.min.js"></script>
         
-        <script type="text/javascript" src="./jquery/jquery.lazy.min.js"></script>
+        <script  src="./jquery/jquery.lazy.min.js"></script>
         
         <script src="./bootstrap/bootstrap.bundle.min.js"></script>
         
-        <script src="./leaflet/leaflet.js"></script>
-        
-        <script src="./leaflet/bouncemarker.js"></script>
-        
-        <script src="./fancybox/jquery.fancybox.min.js"></script>
-        
-        <script src="./js/map.js" defer></script>
+        <script src="./fancybutton/fancy-buttons.min.js"></script>
         
         <script src="./js/main.js"></script>
 
