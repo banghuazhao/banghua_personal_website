@@ -64,11 +64,11 @@ $(document).ready(() => {
 
   $('.prof-pic').on('mouseenter', () => {
 
-    $('.prof-pic').attr("src","./img/profile2.jpg");
+    $('.prof-pic').attr("src","./img/profile2.jpeg");
 
   }).on('mouseleave', () => {
 
-    $('.prof-pic').attr("src","./img/profile1.png");
+    $('.prof-pic').attr("src","./img/profile1.jpg");
 
   })
 

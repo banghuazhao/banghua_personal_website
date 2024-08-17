@@ -149,6 +149,12 @@ h1 {
   transform: translate3d(0px, 0px, 0px);
 }
 
+ul {
+    list-style-position: inside; /* Ensure the bullet aligns with the text */
+    padding-left: 0; /* Remove the default padding */
+    text-align: left; /* Align text to the left */
+}
+
 
 /* Home */
 
